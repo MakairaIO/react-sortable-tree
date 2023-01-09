@@ -1,6 +1,6 @@
 {
-  "name": "react-sortable-tree",
-  "version": "2.8.0",
+  "name": "@makaira/react-sortable-tree",
+  "version": "2.9.0",
   "description": "Drag-and-drop sortable component for nested data and hierarchies",
   "scripts": {
     "prebuild": "yarn run lint && yarn run clean",
@@ -10,7 +10,7 @@
     "clean:storybook": "rimraf build",
     "lint": "eslint src",
     "prettier": "prettier --write \"{src,example/src,stories}/**/*.{js,css,md}\"",
-    "prepublishOnly": "yarn run test && yarn run build",
+    "prepublishOnly": "yarn run build",
     "release": "standard-version",
     "test": "jest",
     "test:watch": "jest --watchAll",
@@ -25,13 +25,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/frontend-collective/react-sortable-tree"
+    "url": "https://github.com/MakairaIO/react-sortable-tree"
   },
-  "homepage": "https://frontend-collective.github.io/react-sortable-tree/",
-  "bugs": "https://github.com/frontend-collective/react-sortable-tree/issues",
-  "authors": [
-    "Chris Fritz"
-  ],
+  "homepage": "https://github.com/MakairaIO/react-sortable-tree",
+  "bugs": "https://github.com/MakairaIO/react-sortable-tree/issues",
   "license": "MIT",
   "jest": {
     "setupFilesAfterEnv": [
@@ -68,15 +65,15 @@
     "frontend-collective-react-dnd-scrollzone": "^1.0.2",
     "lodash.isequal": "^4.5.0",
     "prop-types": "^15.6.1",
-    "react-dnd": "^11.1.3",
-    "react-dnd-html5-backend": "^11.1.3",
+    "react-dnd": "14.0.4",
+    "react-dnd-html5-backend": "^14.1.0",
     "react-lifecycles-compat": "^3.0.4",
     "react-virtualized": "^9.21.2"
   },
   "peerDependencies": {
-    "react": "^16.3.0",
-    "react-dnd": "^7.3.0",
-    "react-dom": "^16.3.0"
+    "react": ">=17.0.2",
+    "react-dnd": "14.0.4",
+    "react-dom": ">=17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -109,7 +106,7 @@
     "jest-enzyme": "^7.1.2",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
-    "react": "^16.11.0",
+    "react": "17.0.2",
     "react-addons-shallow-compare": "^15.6.2",
     "react-dnd-test-backend": "^11.1.3",
     "react-dnd-touch-backend": "^9.4.0",
